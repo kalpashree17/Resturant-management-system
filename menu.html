@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="menu.css" />
+  <title>My App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body">
+
+     <nav>
+    <div class="left-menu">
+      <div class="logo">Eatery</div>
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="#">Reservation</a>
+    </div>
+    <div class="right-menu">
+    <form class="search-form">
+        <input type="text" placeholder="Search" class="search-input" />
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+        <a href="#" title="Logout">Logout</a>
+    </div>
+  </nav>
+     
+
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Food Vista</h1>
+      <p>A Flavorful Journey, One Bite at a Time!</p>
+      <a href="signup.html" class="get-started-btn">
+        Get Started
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="popular-section">
+    <div class="popular-header">
+      <h1>Popular Dishes</h1>
+      <a href="#">All</a>
+    </div>
+    <div class="card-grid">
+      <!-- CARD 1 -->
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="Margheta.jpg" alt="Pizza" />
+          <div class="card-img-overlay"></div>
+          <div class="rank">#1</div>
+        </div>
+        <div class="card-body">
+          <h2>Itallian</h2>
+          <p>One slice of Margherita, and you're in Italy!</p>
+        </div>
+        <div class="card-footer">
+          <button class="outline-btn">View</button>
+          <button class="fill-btn">Add <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="sushi.jpeg" alt="Japanese" />
+          <div class="card-img-overlay"></div>
+          <div class="rank">#2</div>
+        </div>
+        <div class="card-body">
+          <h2>Japanese</h2>
+          <p>A symphony of flavors from the sea — enjoy our Sushi Platter , Crafted to perfection.</p>
+        </div>
+        <div class="card-footer">
+          <button class="outline-btn">View</button>
+          <button class="fill-btn">Add <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+      </div>
+
+     
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img src="momos.jpeg" alt="Momo" />
+          <div class="card-img-overlay"></div>
+          <div class="rank">#3</div>
+        </div>
+        <div class="card-body">
+          <h2>Nepali</h2>
+          <p>Nepal's favorite dumplings, now yours too!</p>
+        </div>
+        <div class="card-footer">
+          <button class="outline-btn">View</button>
+          <button class="fill-btn">Add <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

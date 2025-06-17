@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Restaurant Reservation System</title>
+<link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="left-menu">
+      <div class="logo">Eatery</div>
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Menu</a>
+      <a href="#">Reservation</a>
+    </div>
+    <div class="right-menu">
+      <a href="#" title="Logout">Logout</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Reservation Form -->
+    <div class="form-container" id="reservation-form">
+      <div class="form-title">Make a Reservation</div>
+      <form >
+        <label for="res-name">Name</label>
+        <input type="text" id="res-name" name="name" placeholder="Your full name" required />
+
+        <label for="res-email">Email</label>
+        <input type="email" id="res-email" name="email" placeholder="you@example.com" required />
+
+        <label for="res-phone">Phone Number</label>
+        <input type="tel" id="res-phone" name="phone" placeholder="9834788553" pattern="[+0-9\s]{7,}" title="Please enter a valid phone number" required />
+
+        <label for="res-people">Number of People</label>
+        <input type="number" id="res-people" name="people" min="1" max="20" placeholder="Number of guests" required />
+
+        <button type="submit">Reserve Now</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>

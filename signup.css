@@ -1,0 +1,181 @@
+  /* General body and background */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://www.blueorbiting.com/wp-content/uploads/2022/03/TacosBeerInteriorVibe.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* navbar styles */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0 0 0 / 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav .left-menu,
+  nav .right-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  nav .logo {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #ffba08;
+    margin-right: 25px;
+    cursor: default;
+    user-select: none;
+    font-family: 'Georgia', serif;
+  }
+
+  nav a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 20px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:last-child {
+    margin-right: 0;
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 186, 8, 0.3);
+    color: #ffba08;
+  }
+
+  nav .right-menu a {
+    margin-left: auto;
+  }
+
+  /* container for the page content */
+  main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  /* shared form container */
+  .form-container {
+    background: rgba(255 255 255 / 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.4);
+    max-width: 450px;
+    width: 100%;
+    padding: 40px 35px;
+    color: #f0f0f0;
+  }
+
+  .form-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffba08;
+    margin-bottom: 28px;
+    text-align: center;
+    user-select: none;
+    font-family: 'Georgia', serif;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select {
+    padding: 12px 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255 255 255 / 0.5);
+    background: rgba(255 255 255 / 0.25);
+    color: #fff;
+    backdrop-filter: blur(6px);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+  }
+
+  input::placeholder {
+    color: #d1d5db;
+  }
+
+  input:focus,
+  select:focus {
+    border-color: #ffba08;
+    box-shadow: 0 0 8px rgba(255, 186, 8, 0.6);
+    outline: none;
+    background: rgba(255 255 255 / 0.4);
+  }
+
+  button {
+    background-color: #ffba08;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 0;
+    color: #111;
+    font-weight: 800;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(255, 186, 8, 0.6);
+  }
+
+  button:hover {
+    background-color: #e6a700;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 500px) {
+    .form-container {
+      max-width: 100%;
+      padding: 30px 20px;
+    }
+
+    nav {
+      padding: 10px 15px;
+    }
+    
+    nav a {
+      margin-right: 12px;
+      font-size: 0.9rem;
+    }
+    
+    nav .logo {
+      font-size: 1.3rem;
+      margin-right: 12px;
+    }
+  }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - FoodVista</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    .about-section {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .left-panel {
+     
+      background: url('resturant.jpeg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      ;
+    }
+
+    .left-panel .content-box {
+      
+           
+      z-index: 2;
+    background-color: #dfddddc5;
+      padding: 40px;
+      max-width: 5000px;
+       box-shadow: 0 0 15px rgba(0,0,0,0.1);
+     position: relative;
+      transform: translateX(60px); /* Overlapping into right panel */
+      
+    }
+
+    .left-panel .content-box h1 {
+      font-size: 48px;
+      color: #a51717;
+      margin-bottom: 10px;
+    }
+
+    .left-panel .content-box h1 span {
+      text-decoration: underline;
+      font-size: 60px;
+    }
+
+    .left-panel .content-box p {
+      margin-top: 10px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    
+
+    
+
+     nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0 0 0 / 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav .left-menu,
+  nav .right-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  nav .logo {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #ffba08;
+    margin-right: 25px;
+    cursor: default;
+    user-select: none;
+    font-family: 'Georgia', serif;
+  }
+
+  nav a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 20px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:last-child {
+    margin-right: 0;
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 186, 8, 0.3);
+    color: #ffba08;
+  }
+
+  nav .right-menu a {
+    margin-left: auto;
+  }
+
+   
+
+  </style>
+</head>
+<body>
+
+     <nav>
+    <div class="left-menu">
+      <div class="logo">Eatery</div>
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="#">Reservation</a>
+    </div>
+    <div class="right-menu">
+      <a href="#" title="Logout">Logout</a>
+    </div>
+  </nav>
+
+  <div class="about-section">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <div class="content-box">
+        <h1><span>F</span>oodVista</h1>
+        <p>
+          FoodVista is a next-gen restaurant automation platform built to streamline the entire dining experience.
+          From managing your staff and inventory to engaging customers with real-time feedback and loyalty systems,
+          FoodVista helps you run your restaurant smarter. This cloud-based solution gives you control over
+          every table, every order, and every guest—no matter where you are in the world.
+        </p>
+      </div>
+    </div>
+
+
+</body>
+</html>
